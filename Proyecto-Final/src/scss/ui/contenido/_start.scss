@@ -1,0 +1,65 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.start {
+    .start__container {
+        margin: 5rem 1rem;
+
+        @include m.md {
+            max-width: 85rem;
+            margin: 7rem auto 7rem auto;
+        }
+    }
+
+    .start__link {
+        font-weight: 600;
+        text-align: center;
+        color: v.$primary;
+
+        display: flex;
+    }
+
+    .start__title {
+        font-size: 4rem;
+        text-align: center;
+
+        @include m.md {
+            font-size: 6rem;
+            text-align: left;
+        }
+
+        @include m.lg {
+            font-size: 6.2rem;
+        }
+    }
+
+    .start__text {
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        text-align: center;
+        @include m.md {
+            text-align: left;
+        }
+    }
+
+    .start__input {
+        height: 37px;
+        background: #ffffff;
+        border: 1px solid rgba(0, 0, 0, 0.18);
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        &::placeholder {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+            color: v.$placeholder;
+        }
+    }
+
+    .start__button {
+        width: 100%;
+    }
+}

@@ -24,3 +24,7 @@ img {
 .button {
     @include m.button;
 }
+
+a {
+    text-decoration: none;
+}
