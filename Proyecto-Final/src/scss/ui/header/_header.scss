@@ -1,6 +1,27 @@
-@use "base/mixins" as m;
-@use "base/variables" as v;
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
 
 .header {
     border-bottom: 0.1rem solid v.$navBorderBottom;
+
+    .button {
+        margin-left: 4rem;
+    }
+
+    .navbar-nav {
+        margin-top: 1rem;
+        @include m.lg {
+            margin-top: 0;
+        }
+    }
+
+    .sign-in-buttons {
+        display: flex;
+        margin-top: 3rem;
+        justify-content: center;
+
+        @include m.lg {
+            margin-top: 0;
+        }
+    }
 }

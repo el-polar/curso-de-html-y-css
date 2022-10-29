@@ -3,7 +3,6 @@
 h1,
 h2 {
     margin: 0;
-    line-height: 1.2;
 }
 h1 {
     font-size: 6.2rem;
@@ -11,7 +10,12 @@ h1 {
 h2 {
     font-size: 4rem;
 }
-
-a {
-    text-decoration: none;
+.text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: v.$black;
 }

@@ -16,6 +16,83 @@
         <link rel="stylesheet" href="./css/app.css" />
     </head>
     <body>
+        <header class="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg my-3">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"
+                            ><picture>
+                                <source
+                                    srcset="./img/coinbase_logo.avif"
+                                    type="image/avif"
+                                />
+                                <source
+                                    srcset="./img/coinbase_logo.webp"
+                                    type="image/webp"
+                                />
+                                <img
+                                    loading="lazy"
+                                    src="./img/coinbase_logo.jpg"
+                                    alt="Coinbase Logo"
+                                /> </picture
+                        ></a>
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo01"
+                            aria-controls="navbarTogglerDemo01"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div
+                            class="collapse navbar-collapse"
+                            id="navbarTogglerDemo01"
+                        >
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link text" href="#">Price</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text" href="#">Learn</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text" href="#"
+                                        >Indivisual</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text" href="#"
+                                        >Business</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text" href="#"
+                                        >Developer</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text" href="#"
+                                        >Company</a
+                                    >
+                                </li>
+                            </ul>
+                            <form class="d-flex sign-in-buttons">
+                                <button class="btn text" type="submit">
+                                    Sign in
+                                </button>
+                                <button class="btn button" type="submit">
+                                    Get started
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
         <!-- JavaScript Bundle with Popper -->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"

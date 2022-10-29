@@ -1,7 +1,9 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@popperjs/core': ^2.11.6
   autoprefixer: ^10.3.1
+  bootstrap: 5.2.2
   cssnano: ^5.0.7
   gulp: ^4.0.2
   gulp-avif: ^1.0.1
@@ -12,6 +14,10 @@ specifiers:
   gulp-webp: ^4.0.1
   postcss: ^8.3.6
   sass: ^1.37.5
+
+dependencies:
+  '@popperjs/core': 2.11.6
+  bootstrap: 5.2.2_@popperjs+core@2.11.6
 
 devDependencies:
   autoprefixer: 10.4.12_postcss@8.4.17
@@ -67,6 +73,10 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.13.0
     dev: true
+
+  /@popperjs/core/2.11.6:
+    resolution: {integrity: sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==}
+    dev: false
 
   /@sindresorhus/is/0.7.0:
     resolution: {integrity: sha512-ONhaKPIufzzrlNbqtWFFd+jlnemX6lJAgq9ZeiZtS7I1PIf/la7CW4m83rTXRnVnsMbW2k56pGYu7AUFJD9Pow==}
@@ -469,6 +479,14 @@ packages:
   /boolbase/1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
     dev: true
+
+  /bootstrap/5.2.2_@popperjs+core@2.11.6:
+    resolution: {integrity: sha512-dEtzMTV71n6Fhmbg4fYJzQsw1N29hJKO1js5ackCgIpDcGid2ETMGC6zwSYw09v05Y+oRdQ9loC54zB1La3hHQ==}
+    peerDependencies:
+      '@popperjs/core': ^2.11.6
+    dependencies:
+      '@popperjs/core': 2.11.6
+    dev: false
 
   /brace-expansion/1.1.11:
     resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==}
