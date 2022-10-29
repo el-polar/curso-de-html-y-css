@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Elementos de Interés en Bootstrap</title>
+        <!-- CSS only -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <!-- JavaScript Bundle with Popper -->
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 bg-primary bg-gradient text-light p-5">
+                    <h1>Lorem, ipsum dolor.</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quidem cum sunt neque tenetur doloremque magnam,
+                        corporis modi labore laudantium voluptatem deserunt
+                        distinctio eos dicta consequuntur nam, quia sint! Ut
+                        ullam eveniet beatae quis commodi error corporis odit,
+                        id doloremque quas saepe itaque nobis provident nulla
+                        possimus facilis quaerat incidunt nam similique
+                        perferendis! Quibusdam magni laborum eos nesciunt neque
+                        possimus. Unde.
+                    </p>
+                    <button
+                        class="btn btn-light"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                    >
+                        Click Me!
+                    </button>
+                    <!-- Modal -->
+                    <div
+                        class="modal fade text-dark"
+                        id="exampleModal"
+                        tabindex="-1"
+                        aria-labelledby="exampleModalLabel"
+                        aria-hidden="true"
+                    >
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1
+                                        class="modal-title fs-5"
+                                        id="exampleModalLabel"
+                                    >
+                                        Lorem
+                                    </h1>
+                                    <button
+                                        type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                    ></button>
+                                </div>
+                                <div class="modal-body">
+                                    Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. Accusantium aperiam ullam
+                                    impedit accusamus, eligendi itaque possimus
+                                    voluptatibus id optio quam consectetur fuga
+                                    vero nihil consequuntur adipisci ipsam sit.
+                                    Est assumenda eveniet impedit, nostrum
+                                    obcaecati repudiandae?
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 p-5">
+                    <form action="javascript:void(0)">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label"
+                                >Nombre</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="nombre"
+                                aria-describedby="nombreHelp"
+                            />
+                        </div>
+                        <div class="mb-3">
+                            <label for="teléfono" class="form-label"
+                                >Teléfono</label
+                            >
+                            <input
+                                type="number"
+                                class="form-control"
+                                id="teléfono"
+                                aria-describedby="teléfonoHelp"
+                            />
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label"
+                                >Mensaje</label
+                            >
+                            <textarea
+                                class="form-control"
+                                id="mensaje"
+                                rows="3"
+                            ></textarea>
+                        </div>
+                        <button type="reset" class="btn btn-primary">
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+                <div class="col-12 p-5">
+                    <div class="card text-bg-dark">
+                        <div class="card-body">
+                            <h5 class="card-title">Ali Badillo</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Expedita consequuntur culpa
+                                voluptas corporis, maxime deleniti. Qui incidunt
+                                obcaecati similique, eveniet deleniti, commodi
+                                exercitationem quibusdam vitae nulla, doloremque
+                                quasi dicta. Soluta!
+                            </p>
+                            <div class="card-footer border-light">elpolar.dev@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
