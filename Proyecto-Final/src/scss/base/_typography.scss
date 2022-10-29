@@ -1,0 +1,17 @@
+@use 'base/variables' as v;
+
+h1,
+h2 {
+    margin: 0;
+    line-height: 1.2;
+}
+h1 {
+    font-size: 6.2rem;
+}
+h2 {
+    font-size: 4rem;
+}
+
+a {
+    text-decoration: none;
+}

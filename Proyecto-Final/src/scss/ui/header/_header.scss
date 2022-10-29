@@ -1,0 +1,6 @@
+@use "base/mixins" as m;
+@use "base/variables" as v;
+
+.header {
+    border-bottom: 0.1rem solid v.$navBorderBottom;
+}
