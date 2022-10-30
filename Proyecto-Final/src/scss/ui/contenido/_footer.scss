@@ -38,6 +38,9 @@
     }
     .button {
         width: 100%;
+        @include m.md {
+            width: 13rem;
+        }
     }
 }
 
