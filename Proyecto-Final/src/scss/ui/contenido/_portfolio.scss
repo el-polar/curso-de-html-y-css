@@ -8,24 +8,6 @@
         max-width: 91rem;
         margin: 7rem auto 7rem auto;
     }
-
-    &__title {
-        @include m.font(600, 3rem, 3.6rem, center, v.$black);
-        margin-bottom: 1.5rem;
-        @include m.lg {
-            font-size: 4rem;
-            line-height: 4.8rem;
-        }
-    }
-
-    &__subtitle {
-        @include m.font(600, 1.8rem, 2.2rem, center, v.$bodyLarge);
-        margin-bottom: 4rem;
-        @include m.lg {
-            font-size: 2rem;
-            line-height: 2.4rem;
-        }
-    }
     &__body {
         justify-content: center;
     }

@@ -1,4 +1,5 @@
 @use 'base/variables' as v;
+@use 'base/mixins' as m;
 
 h1,
 h2 {
@@ -19,4 +20,21 @@ h2 {
     line-height: 17px;
     text-align: center;
     color: v.$black;
+}
+[class$='__title'] {
+    @include m.font(600, 3rem, 3.6rem, center, v.$black);
+    margin-bottom: 1.5rem;
+    @include m.lg {
+        font-size: 4rem;
+        line-height: 4.8rem;
+    }
+}
+
+[class$='__subtitle'] {
+    @include m.font(600, 1.8rem, 2.2rem, center, v.$bodyLarge);
+    margin-bottom: 4rem;
+    @include m.lg {
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
 }
