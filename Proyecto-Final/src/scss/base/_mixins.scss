@@ -41,3 +41,11 @@
     gap: $gap;
     grid-template-columns: repeat($columns, 1fr);
 }
+
+@mixin font($weight, $size, $lineHeight, $aling, $color) {
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $lineHeight;
+    text-align: $aling;
+    color: $color;
+}
