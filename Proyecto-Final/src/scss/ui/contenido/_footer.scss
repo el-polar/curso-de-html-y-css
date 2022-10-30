@@ -1,0 +1,52 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.footer {
+    padding: 0 2rem 5rem 2rem;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 33rem;
+    background-color: #f4f7fe;
+    @include m.md {
+        padding: 0 2rem 7rem 2rem;
+        background-size: 40rem;
+    }
+    @include m.lg {
+        background-size: 50rem;
+    }
+    @include m.xl {
+        padding: 0 0 10rem 0;
+        background-size: unset;
+    }
+    &__container {
+        @include m.xl {
+            max-width: 115rem;
+        }
+    }
+    &__body {
+        padding-top: 20rem;
+        @include m.md {
+            padding-top: 8.5rem;
+        }
+    }
+    &__title {
+        text-align: left;
+    }
+    &__text {
+        @include m.font(600, 2rem, 2.4rem, left, v.$bodyLarge);
+        margin: 3rem 0;
+    }
+    .button {
+        width: 100%;
+    }
+}
+
+.notavif.notwebp .footer {
+    background-image: url(../img/space.png);
+}
+.webp .footer {
+    background-image: url(../img/space.webp);
+}
+.avif .footer {
+    background-image: url(../img/space.avif);
+}
