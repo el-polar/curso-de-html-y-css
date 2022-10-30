@@ -39,8 +39,8 @@
             padding-left: 0;
             margin-bottom: 0;
         }
-        @include m.lg {
-            padding-right: 3rem;
+        @include m.xl {
+            padding-right: 6rem;
         }
     }
 }
