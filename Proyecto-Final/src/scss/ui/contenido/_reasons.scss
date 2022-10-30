@@ -1,0 +1,59 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.reasons {
+    margin: 5rem auto;
+    padding: 0 2rem;
+
+    @include m.xl {
+        max-width: 115rem;
+        padding: 0;
+        margin: 7rem auto 7rem auto;
+    }
+}
+
+.reason {
+    padding-bottom: 5rem;
+    &:last-child {
+        padding-bottom: 0;
+    }
+    @include m.md {
+        padding-bottom: 0;
+    }
+    &__image {
+        margin: 3rem auto;
+        width: 6rem;
+        @include m.md {
+            height: 6rem;
+            display: flex;
+            align-items: center;
+        }
+        @include m.xl {
+            height: 8rem;
+        }
+    }
+    &__heading {
+        @include m.font(600, 2rem, 2.4rem, center, v.$black);
+        margin-bottom: 1.5rem;
+        @include m.md {
+            height: 4.8rem;
+        }
+        @include m.lg {
+            font-size: 2.5rem;
+            font-weight: 3rem;
+        }
+    }
+    &__text {
+        @include m.font(400, 1.6rem, 1.9rem, center, v.$body);
+        @include m.md {
+            height: 9.5rem;
+        }
+    }
+    &__link {
+        margin-top: 3rem;
+        @include m.font(400, 1.6rem, 1.9rem, center, v.$primary);
+        @include m.lg {
+            margin-top: 7rem;
+        }
+    }
+}
