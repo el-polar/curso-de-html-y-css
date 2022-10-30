@@ -20,16 +20,17 @@
     }
 
     .start__title {
-        font-size: 4rem;
-        text-align: center;
+        @include m.font(600, 4rem, 4.8rem, center, v.$black);
 
         @include m.md {
             font-size: 6rem;
             text-align: left;
+            line-height: 7.2rem;
         }
 
         @include m.lg {
             font-size: 6.2rem;
+            line-height: 7.5rem;
         }
     }
 
